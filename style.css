@@ -1,0 +1,186 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    background-image: url("../IMG/radio-ht-motorola-profissional.jpg");
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir o fundo */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+    background-attachment: fixed;
+    /* Fixa a imagem de fundo */
+}
+h1 {
+    padding: 10px 20px; /* Ajuste os valores de padding para centralizar o texto */
+    margin: 20px auto; /* Usar auto para margin centraliza o h1 horizontalmente */
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    width: fit-content; /* Ajusta a largura ao conteúdo do h1 */
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 3px solid black;
+}
+
+th,td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Adicionar animação de cor pulsante */
+@keyframes pulsar {
+    0% { background-color: #fff000; }
+    50% { background-color: #ffeb3b; }
+    100% { background-color: #fff000; }
+  }
+  
+  /* Células com input type="text" */
+  td > input[type="text"]:not(:placeholder-shown) {
+    animation: pulsar 1s infinite;
+  }
+  /* Estilo para o GIF no início */
+  .inicio-gif {
+    display: inline-block;
+    margin-right: 5px;
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+  }
+  .gif-inline {
+    vertical-align: middle;
+    margin-right: 5px; /* Espaço entre o GIF e o texto */
+  }
+   
+input {
+    width: 100%;
+    padding: 10px;
+    border: white;
+    /* Ajuste o padding conforme necessário */
+    box-sizing: border-box;
+    /* Inclui o padding e borda no cálculo da largura */
+    text-align: center;
+}
+.col {
+    padding: 10px 20px; /* Ajuste os valores de padding para centralizar o texto */
+    margin: 20px auto; /* Usar auto para margin centraliza o h1 horizontalmente */
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    width: fit-content; /* Ajusta a largura ao conteúdo do h1 */
+}
+.login-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input,
+.login-container button {
+    border-radius: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 15px;
+    /* Ajuste o padding conforme necessário */
+    margin: 5px;
+    /* Espaçamento entre elementos */
+    width: 150px;
+    /* Define um tamanho fixo para os elementos */
+    box-sizing: border-box;
+    /* Inclui o padding e borda no cálculo da largura */
+}
+
+.problem-input {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    /* Ajuste o padding conforme necessário */
+    box-sizing: border-box;
+    /* Inclui o padding e borda no cálculo da largura */
+    white-space: nowrap; /* Impedir quebra de linha */
+    text-overflow: ellipsis; /* Adicionar "..." ao texto que ultrapassar */
+}
+.search-btn {
+    margin-left: 5px; /* Espaçamento entre o botão e o input */
+  }
+
+/* Media query para iPhone 13 Pro */
+@media only screen and (max-width: 390px) {
+    body {
+        background-color: #ffffff;
+        /* Cor de fundo alternativa para telas menores */
+    }
+    .container {
+        margin: 10px auto;
+        /* Ajuste as margens para melhor visualização em telas menores */
+        padding: 10px;
+        /* Adicione padding para melhor espaçamento */
+    }
+
+    th,
+    td {
+        padding: 5px;
+        text-align: center;
+        /* Ajuste o padding das células para telas menores */
+    }
+
+    .login-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+      
+      .login-container input,
+      .login-container button {
+        flex: 1;
+        margin: 0 5px;
+      }
+
+    input {
+        padding: 5px;
+        border: white;
+    }
+
+    .problem-input {
+        text-align: left
+        ;
+        width: 100%;
+        padding: 5px;
+        /* Ajuste o padding conforme necessário */
+        box-sizing: border-box;
+        /* Inclui o padding e borda no cálculo da largura */
+    }
+
+    /* Ajuste de fonte para datalist */
+    datalist option {
+        font-size: 12px;
+        /* Ajuste o tamanho da fonte conforme necessário */
+        white-space: nowrap;
+        /* Evita quebra de linha */
+        overflow: hidden;
+        /* Esconde o conteúdo que excede */
+        text-overflow: ellipsis;
+        /* Adiciona "..." no final do texto que excede */
+    }
+    
+
+}
