@@ -21,7 +21,8 @@ const db = getFirestore(app);
 const users = {
   "alexandre": "2013",
   "clovis": "2028",
-  "patricio": "2015"
+  "patricio": "2015",
+  "roberto": "2099",
 };
 
 window.login = async function login() {
