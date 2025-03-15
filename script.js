@@ -23,6 +23,7 @@ const users = {
   "clovis": "2028",
   "patricio": "2015",
   "roberto": "2099",
+  "magno": "2014",
 };
 
 window.login = async function login() {
