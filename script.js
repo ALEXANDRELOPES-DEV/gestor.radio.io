@@ -25,7 +25,7 @@ const users = {
   "Roberto": "2099",
   "magno": "2014",
   "Douglas": "2024",
-  "Hugo": "1025",
+  "Hugo": "1025"
 };
 
 window.login = async function login() {
